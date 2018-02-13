@@ -1,4 +1,4 @@
-# Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
+# Учебный проект «Код и Магия»  'Code and Magic project' [![Build status][travis-image]][travis-url]
 
 * User: [crash](https://github.com/crashc/).
 
