@@ -180,7 +180,33 @@
     <p class="setup-similar-label">Петр Петров</p>
   </div>
 </template>
+<script >
 
+  // Размер огненного шара
+  var fireballSize = 22;
+  // Скорость мага
+  var wizardSpeed = 3;
+  // Размер Мага по ширине
+  var wizardWidth = 36;
+  // проверяет направление ветра и возвращает большую скорость если маг повернут влево
+  var getFireballSpeed = function(left)
+  {
+    if(left == true) return 5
+      else return 2;
+  }  ;
+
+// Определение высоты мага
+var getWizardHeight = function(wizardWidth) { return 1.337 * wizardWidth};
+
+// Установка координат мага по горизонтали и вертикали
+var getWizardX = function (width) {
+      return width/2;}
+var getWizardY = function (height) {
+      return height -48;}
+
+// Вывод значений высоты и ширины фрейма в консоль для дебага
+console.log('Height = '+ (height-50) +' and Width = '+width);
+</script>
 <script src="js/game.js"></script>
 
 </body>
